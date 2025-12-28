@@ -1,0 +1,28 @@
+/* STYL BELKI */
+.student-header {
+	width: 300px;
+	background-color: #9E9E9E;
+	color: black;
+	padding: 10px;
+	border: 2px solid #808088;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.student-header.active {
+	background-color: #ccc;
+}
+
+/* STYL ZAWARTOŒCI */
+.student-content {
+	width: 290px;
+	border: 1px solid #ccc;
+	padding: 15px;
+	display: flex;
+	justify-content: space-between; /* rozsuwa listê i œredni¹ na przeciwne koñce */
+	align-items: center; /* Wyœrodkowanie w pionie */
+}
+/* KLASA DO ZWIJANIA ZAWARTOŒCI */
+.is-hidden {
+	display: none;
+}
