@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="prostykalkulator.css">
+    </head>
+<body>
+
+    <div class="kalkulator">
+        <div class="ekran">
+            <span id="wynik">0</span>
+        </div>
+
+        <div class="formularz">
+            <div class="pole">
+                <label>Pierwsza liczba</label>
+                <input type="number" id="liczba1">
+            </div>
+            <div class="pole">
+    <label>Druga liczba</label>
+    <input type="number" id="liczba2">
+</div>
+
+            <div class="pole">
+                <label>Działanie</label>
+                <select id="dzialanie">
+                    <option value="dodaj">+</option>
+                    <option value="odejmij">-</option>
+                    <option value="pomnoz">*</option>
+                    <option value="podziel">/</option>
+                </select>
+            </div>
+
+            <button onclick="oblicz()">Oblicz</button>
+        </div>
+    </div>
+
+    <script src="prostykalkulator.js"></script>
+</body>
+</html>
