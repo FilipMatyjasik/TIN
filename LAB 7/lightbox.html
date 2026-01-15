@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="lightbox.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>LAB7 - Galeria Lightbox</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"><i class='bx bx-shinto'></i> Gallery</a>
+    </header>
+
+    <main class="article">
+        <div class="siatka-galerii">
+            <img src="lightbox1.jpg" onclick="otworzLightbox(0)" alt="Zdj 1">
+            <img src="lightbox2.jpg" onclick="otworzLightbox(1)" alt="Zdj 2">
+            <img src="lightbox3.jpg" onclick="otworzLightbox(2)" alt="Zdj 3">
+            <img src="lightbox4.jpg" onclick="otworzLightbox(3)" alt="Zdj 4">
+        </div>
+
+        <div id="mojLightbox" class="modal">
+            <span class="zamknij" onclick="zamknijLightbox()">&times;</span>
+            
+            <div id="licznik" class="numer-slajdu"></div>
+            
+            <div class="modal-content">
+                <button class="prev" onclick="zmienSlajd(-1)">&#10094;</button>
+                
+                <img id="duzeZdjecie" src="" alt="Podgląd zdjęcia">
+                
+                <button class="next" onclick="zmienSlajd(1)">&#10095;</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; s33527 - Filip Matyjasik -  Lightbox </p>
+    </footer>
+
+    <script src="lightbox.js"></script>
+
+</body>
+</html>
